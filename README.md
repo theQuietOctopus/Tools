@@ -15,3 +15,13 @@ python3 comments_crawl.py [-h] [--depth DEPTH] url
 ```bash
 python3 smtp_vrfy.py <IP> <PORT> <WORDLIST> <VALID_CODE>
 ```
+
+## CVE-2024-23334
+
+**`CVE-2024-23334.sh`**: A script to exploit the path traversal vulnerability in the python AioHTTP library =< 3.9.1.
+
+### Usage
+```bash
+chmod +x CVE-2024-23334.sh
+./CVE-2024-23334.sh <URL> <PATH> <FILE>
+```
