@@ -15,6 +15,14 @@ python3 comments_crawl.py [-h] [--depth DEPTH] url
 ```bash
 python3 smtp_vrfy.py <IP> <PORT> <WORDLIST> <VALID_CODE>
 ```
+## API Brute-Force
+
+**`api_bruteforce.py`**: A script to brute-force POST REQUESTS in API. Additional arguments for headers, attempts and interval are also supplied to prevent IP blacklist.
+
+### Usage
+```bash
+python3 api_bruteforce_colored.py -l <USER> -P <PASS-WORDLIST> -u <URL> --failure <MESSAGE>
+```
 
 ## CVE-2024-23334
 
