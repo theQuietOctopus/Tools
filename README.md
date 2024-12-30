@@ -18,7 +18,7 @@ python3 smtp_vrfy.py <IP> <PORT> <WORDLIST> <VALID_CODE>
 
 ## CVE-2024-23334
 
-**`CVE-2024-23334.sh`**: A script to exploit the path traversal vulnerability in the python AioHTTP library =< 3.9.1.
+**`CVE-2024-23334.sh`**: A script to exploit the path traversal vulnerability in the python AioHTTP library =< 3.9.1. Props to [z3rObyte](https://github.com/z3rObyte/CVE-2024-23334-PoC)
 
 ### Usage
 ```bash
