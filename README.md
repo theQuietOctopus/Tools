@@ -21,7 +21,7 @@ python3 smtp_vrfy.py <IP> <PORT> <WORDLIST> <VALID_CODE>
 
 ### Usage
 ```bash
-python3 api_bruteforce_colored.py -l <USER> -P <PASS-WORDLIST> -u <URL> --failure <MESSAGE>
+python3 api_bruteforce.py [-h] [-l USERNAME] [-L USERNAME_LIST] [-p PASSWORD] [-P PASSWORD_LIST] --url URL [--headers [HEADERS ...]] --body BODY --failed-response FAILED_RESPONSE [--attempts ATTEMPTS] [--interval INTERVAL]
 ```
 
 ## CVE-2024-23334
