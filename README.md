@@ -21,7 +21,17 @@ python3 smtp_vrfy.py <IP> <PORT> <WORDLIST> <VALID_CODE>
 
 ### Usage
 ```bash
-python3 api_bruteforce.py [-h] [-l USERNAME] [-L USERNAME_LIST] [-p PASSWORD] [-P PASSWORD_LIST] --url URL [--headers [HEADERS ...]] --body BODY --failed-response FAILED_RESPONSE [--attempts ATTEMPTS] [--interval INTERVAL]
+python3 api_bruteforce.py [-h] [-l USERNAME] [-L USERNAME_LIST] [-p PASSWORD] [-P PASSWORD_LIST] --url URL --body BODY --failed-response FAILED_RESPONSE \
+[--headers [HEADERS ...]] [--attempts ATTEMPTS] [--interval INTERVAL]
+```
+### Example
+```bash
+python3 api_bruteforce.py --url "http://example.com/api/login" \
+  -l admin -P passwords.txt \
+  --body '{"username": "^USER^", "password": "^PASS^"}' \
+  --failed-response "Invalid credentials" \
+  --headers '{"Content-Type": "application/json;charset=utf-8"}' \
+  --attempts 1000 --interval 3600
 ```
 
 ## CVE-2024-23334
